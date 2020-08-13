@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Demo for Operators & Expressions </title>
+    </head>
+    <body>
+        <script>
+            // Airthmetic Operators
+            var a = 10;
+            var b = 90;
+            var c = a + b;
+            document.write("a = " + a + "<br/>");
+            document.write("b = " + b + "<br/><br/>");
+            document.write("Addition of a and b = " + c + "<br/>");
+
+            c = a - b;
+            document.write("Subtraction of a and b = " + c + "<br/>");
+
+            c = a * b;
+            document.write("Multiplication of a and b = " + c + "<br/>");
+
+            c = a / b;
+            document.write("Division of a and b = " + c + "<br/>");
+
+            c = a % b;
+            document.write("Modulus of a and b = " + c + "<br/><br/>");
+
+            // More Operators
+            p = 25;
+            document.write("p before incrementing = " + p + "<br/>");
+            p++;
+            document.write("p after incrementing = " + p + "<br/><br/>");
+
+            document.write("p before decrementing = " + p + "<br/>");
+            p = p - 10;
+            document.write("p after decrementing = " + p + "<br/><br/>");
+
+            q = 2;
+            document.write("q before incrementing = " + q + "<br/>");
+            q += 5;
+            document.write("q after incrementing = " + q + "<br/><br/>");
+
+            // String Operators
+            x = "Hi" + "There";
+            document.write("Concatenated x (way 1) = " + x + "<br/>");
+            x = "Hello " + 10;
+            document.write("Concatenated x (way 2) = " + x + "<br/>");
+            x = "Hey";
+            x += "Prashant";
+            document.write("Concatenated x (way 3) = " + x + "<br/>");
+
+            // Boolean Operators
+            y = 10;
+            if(y == 10)
+            {
+                document.write(true);
+            }
+            else
+            {
+                document.write(false);
+            }
+
+            x = 90;
+            if(x > y)
+            {
+                document.write("<br/>" + "X is greater than Y");
+            }
+            else
+            {
+                document.write("<br/>" + "X is lesser than Y");
+            }
+
+            z = 100;
+            if(z === "100")
+            {
+                document.write("<br/>" + "TRUE");
+            }
+            else
+            {
+                document.write("<br/>" + "FALSE");
+            }
+
+            /*
+                Logical Operators :-
+                    1) && (Both Conditions provided should be TRUE)
+                    2) || (Any One of the Conditions should be TRUE)
+                    3) ! (It Inverses the Result)
+            */
+            p = 10;
+            q = "Prashant";
+            if(p == 10 && q == "Prashant")
+            {
+                document.write("<br/>" + "Valid User");
+            }
+            else
+            {
+                document.write("<br/>" + "Invalid User");
+            }
+        </script>
+    </body>
+</html>

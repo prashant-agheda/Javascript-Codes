@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Demo for Events in JS </title>
+    </head>
+    <body>
+
+        <h1> Javascript Date Function + Events </h1>
+        <p id="display-area"> This is a simple Paragraph </p>
+        <button id="btn" onclick="displayDate();"> Display Date </button>
+
+        <script>
+            function displayDate()
+            {
+                document.getElementById("display-area").innerHTML = "Today's Date is : " + Date();
+            }
+        </script>
+
+    </body>
+</html>

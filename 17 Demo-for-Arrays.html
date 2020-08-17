@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Arrays in JS </title>
+        <style>
+            body
+            {
+                padding: 20px;
+            }
+            button
+            {
+                font-family: Consolas;
+                font-size: 20px;
+                background-color: tomato;
+                color: white;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body onload="loadCars()">
+        <button onclick="myCars()"> Add your Cars :) </button>
+        <p id="cars"></p>
+
+        <script>
+            var cars = ["Lamborghini", "Bugatti", "Audi", "Skoda"];
+
+            function loadCars()
+            {
+                document.getElementById("cars").innerHTML = cars;
+            }
+
+            function myCars()
+            {
+                var car = prompt("What is your Favourite Car ?");
+                cars[cars.length] = car;
+                document.getElementById("cars").innerHTML = cars;
+            }
+        </script>
+    </body>
+</html>

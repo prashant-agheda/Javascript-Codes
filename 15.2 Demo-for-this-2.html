@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Demo for this in JS </title>
+
+        <style>
+            body
+            {
+                padding: 30px;
+                font-family: Consolas;
+                font-size: 20px;
+            }
+            #message
+            {
+                border: 2px solid black;
+                background-color: red;
+                color: white;
+                padding: 20px;
+                font-size: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <p id="message"> Hover Over an Image </p>
+
+        <img src="Car-image-1.jpg" alt="Car Image 1" width="400" height="300" id="ID-1-Image"
+                onmouseover="showProperties(this)"
+                onmouseleave="document.getElementById('message').innerHTML = 'Hover Over an Image';" />
+
+        <br/><hr/><br/>
+
+        <img src="Car-image-2.jpg" alt="Car Image 2" width="400" height="300" id="ID-2-Image"
+                onmouseover="showProperties(this)"
+                onmouseleave="document.getElementById('message').innerHTML = 'Hover Over an Image';" />
+        <script>
+            function showProperties(element)
+            {
+                document.getElementById("message").innerHTML = element.alt;
+                document.getElementById("message").style.backgroundColor = "lightgreen";
+                document.getElementById("message").style.color = "black";
+            }
+        </script>
+
+    </body>
+</html>

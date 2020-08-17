@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Advanced Conditionals in JS - 2 </title>
+        <style>
+            body
+            {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+            var name = prompt("What is your Name ?");
+
+            // Every if statement is checked instead of only one
+            if (name.length != 0 && name == "Prashant")
+            {
+                console.log("What a Beautiful Name :)");
+            }
+
+            if (name.length != 0 && name != "Prashant")
+            {
+                console.log("What's Up " + name);
+            }
+
+            if (name.length == 0)
+            {
+                console.log("Feeling Shy !");
+            }
+        
+        </script>
+    </body>
+</html>

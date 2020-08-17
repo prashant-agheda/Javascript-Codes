@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Demo for Events in JS (using hardcoded styles) </title>
+
+        <style>
+            body
+            {
+                padding: 30px;
+                font-family: Consolas;
+                font-size: 20px;
+            }
+            .open
+            {
+                display: block;
+            }
+            .closed
+            {
+                display: none;
+            }
+            button
+            {
+                width: 150px;
+                background-color: #00ccee;
+                font-family: Consolas;
+                font-size: 20px;
+                padding: 5px;
+            }
+            button:focus
+            {
+                background-color: yellow;
+            }
+            #demo
+            {
+                border: 2px solid black;
+                background-color: red;
+                color: white;
+                padding: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <h1> Changing the Styles </h1>
+        <p> Javascript can change the style of an HTML Element. </p>
+        <button onclick="openMe();"> Open ! </button>
+        <button onclick="closeMe();"> Close ! </button>
+        <p id="demo"> You can Open and Close this paragraph using the buttons above :) </p>
+
+        <script>
+            function openMe()
+            {
+                var a = document.getElementById("demo");
+                a.style.display = "block";
+            }
+            function closeMe()
+            {
+                var b = document.getElementById("demo");
+                b.style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>

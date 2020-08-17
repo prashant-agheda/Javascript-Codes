@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Demo for Events in JS </title>
+        
+        <style>
+            body
+            {
+                padding: 30px;
+                font-family: Consolas;
+            }
+            p
+            {
+                border: 2px solid black;
+                padding: 20px;
+                width: 400px;
+                font-size: 20px;
+                text-align: center;
+            }
+            #test
+            {
+                background-color: gray;
+                color: yellow;
+            }
+            button
+            {
+                width: 200px;
+                background-color: lightblue;
+                padding: 5px;
+                font-family: Consolas;
+                font-size: 22px;
+                border-radius: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <h1> Javascript - Modifying the DOM </h1>
+        <button id="btn1" onclick="button1Click();"> First </button>
+        <button id="btn2" onclick="button2Click();"> Second </button>
+        <p> This code shouldn't change. </p>
+        <p id="test"> This will change. </p>
+        <p> This shouldn't change either. </p>
+
+        <script>
+            function button1Click()
+            {
+                document.getElementById("test").innerHTML = "Clicked First Button :)";
+                document.getElementById("test").style.backgroundColor = "red";
+                document.getElementById("test").style.color = "white";
+            }
+            function button2Click()
+            {
+                document.getElementById("test").innerHTML = "Clicked Second Button :)";
+                document.getElementById("test").style.backgroundColor = "yellow";
+                document.getElementById("test").style.color = "blue";
+            }
+        </script>
+
+    </body>
+</html>

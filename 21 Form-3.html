@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title> JS Forms - Form 3 </title>
+        <style>
+            body
+            {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="form3">
+
+                <!-- Digits 0 to 9 and there should be 5 digits -->
+                Zip Code with Pattern :
+                <input type="text" name="zip_code_Pattern" pattern="[0-9]{5}" required />
+                <br/><br/>
+
+                <!-- Value should be between min and max values -->
+                Zip Code with Number :
+                <input type="number" name="zip_code_Number" min="00000" max="99999" required />
+                <br/><br/>
+
+                <input type="submit" name="btn1" value="Click to Submit" />
+        </form>
+
+        <script>
+        </script>
+    </body>
+</html>

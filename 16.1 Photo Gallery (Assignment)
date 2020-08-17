@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Photo Gallery using JS </title>
+	<link rel="stylesheet" href="gallery.css" />
+	<script src = "gallery.js"></script>
+</head>
+<body>
+	
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
+	
+	<img class = "preview" alt = "Car Image 1" src = "Car-image-1.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" />
+	
+	<img class = "preview" alt = "Car Image 2" src = "Car-image-2.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" />
+	
+	<img class = "preview" alt = "Car Image 3" src = "Car-image-3.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" />
+
+</body>
+</html>

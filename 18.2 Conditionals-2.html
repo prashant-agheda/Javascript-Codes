@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Conditionals in JS - 2 </title>
+        <style>
+            body
+            {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+            var numbers = [11, 47, 60, 200, 290];
+            var sum = 0;
+
+            if (numbers.length > 0)
+            {
+                for(index = 0; index < numbers.length; index++)
+                {
+                    sum += numbers[index];
+                }
+                console.log("Array = " + numbers);
+                console.log("Array Length = " + numbers.length);
+                console.log("Sum of Array Elements = " + sum);
+                console.log("\nAverage = " + sum/numbers.length);
+            }
+            else
+            {
+                console.log("Array is Empty :(");
+            }
+
+        </script>
+    </body>
+</html>
